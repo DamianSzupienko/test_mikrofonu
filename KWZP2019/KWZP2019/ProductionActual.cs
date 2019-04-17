@@ -10,16 +10,21 @@ using System.Windows.Forms;
 
 namespace KWZP2019
 {
-    public partial class ProductionProcess : Form
+    public partial class ProductionActual : Form
     {
-        RoofingCompanyEntities db; 
-        public ProductionProcess(RoofingCompanyEntities db)
+        RoofingCompanyEntities db;
+        public ProductionActual(RoofingCompanyEntities db)
         {
             InitializeComponent();
             this.db = db;
         }
 
-        private void ProductionProcess_Load(object sender, EventArgs e)
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void ProductionActual_Load(object sender, EventArgs e)
         {
             dataGridView1.DataSource = db.ProductionProces.ToList();
         }

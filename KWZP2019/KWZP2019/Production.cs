@@ -41,6 +41,8 @@ namespace KWZP2019
         {
             ProductionProcess ProductionProcessForm = new ProductionProcess(db);
             ProductionProcessForm.Show();
+            ProductionActual ProductionActualForm = new ProductionActual(db);
+            ProductionActualForm.Show();
         }
 
         private void btnProductionPlanned_Click(object sender, EventArgs e)

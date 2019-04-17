@@ -1,6 +1,6 @@
 ﻿namespace KWZP2019
 {
-    partial class ProductionProcess
+    partial class ProductionActual
     {
         /// <summary>
         /// Required designer variable.
@@ -38,6 +38,7 @@
             this.failuresDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.outControlDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.plannedProductionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnClose = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productionProceBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -55,10 +56,10 @@
             this.outControlDataGridViewTextBoxColumn,
             this.plannedProductionDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.productionProceBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(27, 43);
+            this.dataGridView1.Location = new System.Drawing.Point(32, 72);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(845, 422);
+            this.dataGridView1.Size = new System.Drawing.Size(802, 137);
             this.dataGridView1.TabIndex = 0;
             // 
             // productionProceBindingSource
@@ -107,15 +108,26 @@
             this.plannedProductionDataGridViewTextBoxColumn.HeaderText = "PlannedProduction";
             this.plannedProductionDataGridViewTextBoxColumn.Name = "plannedProductionDataGridViewTextBoxColumn";
             // 
-            // ProductionProcess
+            // btnClose
+            // 
+            this.btnClose.Location = new System.Drawing.Point(437, 261);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(75, 23);
+            this.btnClose.TabIndex = 1;
+            this.btnClose.Text = "WYJDZ";
+            this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
+            // ProductionActual
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.ClientSize = new System.Drawing.Size(926, 450);
+            this.Controls.Add(this.btnClose);
             this.Controls.Add(this.dataGridView1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.Name = "ProductionProcess";
-            this.Text = "Aktualna produkcja";
+            this.Name = "ProductionActual";
+            this.Text = "ProductionActual";
+            this.Load += new System.EventHandler(this.ProductionActual_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.productionProceBindingSource)).EndInit();
             this.ResumeLayout(false);
@@ -133,5 +145,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn outControlDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn plannedProductionDataGridViewTextBoxColumn;
         private System.Windows.Forms.BindingSource productionProceBindingSource;
+        private System.Windows.Forms.Button btnClose;
     }
 }

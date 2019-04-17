@@ -232,6 +232,12 @@
     <Compile Include="Production.Designer.cs">
       <DependentUpon>Production.cs</DependentUpon>
     </Compile>
+    <Compile Include="ProductionActual.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductionActual.Designer.cs">
+      <DependentUpon>ProductionActual.cs</DependentUpon>
+    </Compile>
     <Compile Include="ProductionFailures.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -344,6 +350,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Production.resx">
       <DependentUpon>Production.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductionActual.resx">
+      <DependentUpon>ProductionActual.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ProductionFailures.resx">
       <DependentUpon>ProductionFailures.cs</DependentUpon>
